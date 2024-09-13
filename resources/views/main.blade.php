@@ -39,12 +39,36 @@
 
     <!-- Блок Hero -->
     <video autoplay loop>
-        <source src="{{ asset('video/hero.mov') }}" type="video/quicktime">
+        <!-- <source src="{{ asset('video/hero.mov') }}" type="video/quicktime"> -->
+        <source src="{{ asset('video/hero.mp4') }}" type="video/mp4">
         Ваш браузер не поддерживает видео-тег.
     </video>
 
     <!-- Промежуточный блок #1 -->
     <div class="temp-1">
-        
+        <img src="{{ asset('images/temp-img1.png') }}" alt="Krud Restaurant">
+
+        <div class="temp-1--text">
+            <h2>Braserie</h2>
+            <p>Krud este un concept local modern, creat din dorința de a promova, de a susține producătorii români din toate colțurile țării și de a ajuta la creșterea economiei locale promovând calitatea.</p>
+            <span>Misiunea noastră este de a oferi clienților mai mult decât mâncare de calitate. Ne propunem sa îți oferim de fiecare dată o experiență fantastică, prin intermediul bucătarilor noștri iscusiți și a specialităților culinare deosebite.</span>
+            <span>O confirmare a efortului nostru continuu a fost primirea unei 'bonete', pentru unul dintre cele mai mari punctaje de rating pentru puținele restaurante premiate și incluse în ghidul 2019 din Iași din partea celor de la Gault&Millau - primul ghid internațional gastronomic prezent în România.</span>
+        </div>
     </div>
+
+    <!-- Промежуточный блок #2 -->
+    <div class="temp-2">
+        <div class="temp-2--text">
+            <h2>Restaurant</h2>
+            <p>Krud, un concept de a mânca</p>
+            <div class="sub-text">
+                <span>Mai mult decât un simplu loc de petrecere a timpului liber, Krud Braserie este punctul de întâlnire a unei comunități: cea a iubitorilor de produse românești.</span>
+                <span>Aici, se regăsesc laolaltă fructe și legume proaspete, lactate delicioase și preparate din carne savuroase, dulcețuri naturale și miere de diferite tipuri, zacuscă unică pregătită de bucătarii Krud și specialitățile culinare ale acestora.</span>
+            </div>
+
+            <a href="">Vezi meniul</a>
+        </div>
+
+        <img src="{{ asset('images/temp-img2.png') }}" alt="Krud Restaurant">
+    </div>  
 @endsection

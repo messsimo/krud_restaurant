@@ -33,3 +33,93 @@ img, svg {
 video {
     width: 100%;
 }
+
+/* Cтили для промежуточного блока #1 */
+.temp-1 {
+    width: 100%;
+    margin-top: -10px;
+    display: flex;
+}
+
+.temp-1 img,
+.temp-2 img {
+    width: 50%;
+}
+
+.temp-1 .temp-1--text,
+.temp-2 .temp-2--text {
+    width: 50%;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 100px;
+}
+
+.temp-1 .temp-1--text h2,
+.temp-2 .temp-2--text h2 {
+    color: #999966;
+    font-family: "Great Vibes", system-ui;
+    font-weight: 400;
+    font-size: 56px;
+    padding-bottom: 25px;
+}
+
+.temp-1 .temp-1--text p,
+.temp-2 .temp-2--text p {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; 
+    padding-bottom: 25px;
+}
+
+.temp-1 .temp-1--text span {
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Cтили для промежуточного блока #2 */
+.temp-2 {
+    width: 100%;
+    display: flex;
+}
+
+
+.temp-2 .temp-2--text {
+    background-color: #16191e;
+}
+
+.temp-2 .temp-2--text p {
+    color: #ffff;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.temp-2 .temp-2--text .sub-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.temp-2 .temp-2--text .sub-text span:first-child {
+    padding-right: 50px;
+}
+
+.temp-2 .temp-2--text .sub-text span {
+    color: #9999;
+    width: 50%;
+    font-size: 14px;
+}
+
+.temp-2 .temp-2--text a {
+    background-color: #cd2122;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.temp-2 .temp-2--text a:hover {
+    background-color: #b32121;
+}
