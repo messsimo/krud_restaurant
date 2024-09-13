@@ -36,4 +36,15 @@
             </div>
         </div>
     </header>
+
+    <!-- Блок Hero -->
+    <video autoplay loop>
+        <source src="{{ asset('video/hero.mov') }}" type="video/quicktime">
+        Ваш браузер не поддерживает видео-тег.
+    </video>
+
+    <!-- Промежуточный блок #1 -->
+    <div class="temp-1">
+        
+    </div>
 @endsection
