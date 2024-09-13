@@ -70,5 +70,18 @@
         </div>
 
         <img src="{{ asset('images/temp-img2.png') }}" alt="Krud Restaurant">
-    </div>  
+    </div> 
+    
+    <!-- Промежуточный блок #3 -->
+    <div class="temp-3">
+        <h2>La creme de la creme</h2>
+        <p>CARNE MATURATĂ DE VITĂ</p>
+        <div class="temp-3--text">
+            <span>Vă invităm să încercați selecția de carne de vită maturată, de la producători locali adusă direct în bucătăria Krud.</span>
+            <span>O experință culinară care vă va stimula simțurile.</span>
+        </div>
+        <div class="temp-3--text-a">
+            <a href="">VEZI DETALII</a>
+        </div>
+    </div>
 @endsection
