@@ -12,5 +12,8 @@
 <body>
     <!-- Подключение секций -->
     @yield("main")
+
+    <!-- Подключение JavaScript -->
+    <script src="{{ asset('js/slider-review.js') }}"></script>
 </body>
 </html>

@@ -84,4 +84,67 @@
             <a href="">VEZI DETALII</a>
         </div>
     </div>
+
+    <!-- Блок с отзывами -->
+    <div class="reviews">
+        <h2>Testimoniale</h2>
+
+        <div class="reviews-container">
+            <!-- #1 -->
+            <div class="block active-review">
+                <div class="top-block">
+                    <svg class="prevBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="61px" height="61px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M3445 4611 c-28 -13 -343 -322 -1012 -992 -871 -873 -973 -978 -983 -1016 -25 -98 -86 -31 983 -1102 733 -734 983 -978 1016 -993 89 -41 194 10 220 108 24 90 72 37 -922 1032 l-912 912 912 913 c786 787 913 917 922 952 27 100 -58 206 -164 205 -11 0 -38 -9 -60 -19z"/></g></svg>
+                    <span>"Am mâncat un angus burger care era foarte suculent și gustos, dar am încercat și din alte farfurii de la masă noastră, bucatele erau delicioase. E unul din locurile rare în Iași unde se gătește cu gust. Recomand cu încredere!"</span>
+                    <svg class="nextBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="61px" height="61px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1545 4616 c-72 -32 -116 -121 -96 -193 9 -31 171 -198 923 -950 l913 -913 -911 -912 c-716 -716 -914 -921 -923 -949 -26 -83 38 -189 124 -205 91 -17 40 -62 1102 999 881 881 983 986 993 1025 25 97 86 30 -983 1101 -669 670 -984 979 -1012 992 -47 22 -88 23 -130 5z"/></g></svg>
+                </div>
+
+                <div class="sub-block">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1918 3083 c-94 -101 -202 -295 -260 -467 -28 -81 -31 -104 -32 -206 0 -95 4 -125 22 -171 44 -111 110 -177 221 -221 47 -19 76 -22 186 -22 125 -1 132 0 195 30 114 54 181 128 220 245 18 54 21 81 18 169 -3 93 -7 113 -34 170 -18 36 -47 83 -67 106 -40 45 -132 99 -189 109 -21 4 -38 10 -38 14 0 13 132 171 171 205 l41 35 -33 5 c-30 5 -361 46 -372 46 -2 0 -24 -21 -49 -47z"/><path d="M2897 3050 c-110 -139 -206 -329 -248 -492 -28 -107 -23 -243 12 -331 58 -149 208 -237 405 -237 133 0 233 39 316 121 86 86 124 202 115 347 -4 66 -11 96 -39 155 -55 114 -133 181 -248 210 l-50 13 63 79 c35 44 85 99 111 122 l47 42 -33 5 c-45 7 -362 46 -376 46 -7 0 -40 -36 -75 -80z"/></g></svg>
+                    <p>Artur Roscolotenco</p>
+                </div>
+            </div>
+
+            <!-- #2 -->
+            <div class="block">
+                <div class="top-block">
+                    <svg class="prevBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M3445 4611 c-28 -13 -343 -322 -1012 -992 -871 -873 -973 -978 -983 -1016 -25 -98 -86 -31 983 -1102 733 -734 983 -978 1016 -993 89 -41 194 10 220 108 24 90 72 37 -922 1032 l-912 912 912 913 c786 787 913 917 922 952 27 100 -58 206 -164 205 -11 0 -38 -9 -60 -19z"/></g></svg>
+                    <span>"Real is right! Deliciously authentic food, great grocery selection, pleasant staff, and very reasonable prices! Love it!"</span>
+                    <svg class="nextBtn" version="1.0" xmlns="http://www.w3.org/2000/svg"  width="32px" height="32px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1545 4616 c-72 -32 -116 -121 -96 -193 9 -31 171 -198 923 -950 l913 -913 -911 -912 c-716 -716 -914 -921 -923 -949 -26 -83 38 -189 124 -205 91 -17 40 -62 1102 999 881 881 983 986 993 1025 25 97 86 30 -983 1101 -669 670 -984 979 -1012 992 -47 22 -88 23 -130 5z"/></g></svg>
+                </div>
+
+                <div class="sub-block">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1918 3083 c-94 -101 -202 -295 -260 -467 -28 -81 -31 -104 -32 -206 0 -95 4 -125 22 -171 44 -111 110 -177 221 -221 47 -19 76 -22 186 -22 125 -1 132 0 195 30 114 54 181 128 220 245 18 54 21 81 18 169 -3 93 -7 113 -34 170 -18 36 -47 83 -67 106 -40 45 -132 99 -189 109 -21 4 -38 10 -38 14 0 13 132 171 171 205 l41 35 -33 5 c-30 5 -361 46 -372 46 -2 0 -24 -21 -49 -47z"/><path d="M2897 3050 c-110 -139 -206 -329 -248 -492 -28 -107 -23 -243 12 -331 58 -149 208 -237 405 -237 133 0 233 39 316 121 86 86 124 202 115 347 -4 66 -11 96 -39 155 -55 114 -133 181 -248 210 l-50 13 63 79 c35 44 85 99 111 122 l47 42 -33 5 c-45 7 -362 46 -376 46 -7 0 -40 -36 -75 -80z"/></g></svg>
+                    <p>Adriana Hoyos Cozma</p>
+                </div>
+            </div>
+
+            <!-- #3 -->
+            <div class="block">
+                <div class="top-block">
+                    <svg class="prevBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M3445 4611 c-28 -13 -343 -322 -1012 -992 -871 -873 -973 -978 -983 -1016 -25 -98 -86 -31 983 -1102 733 -734 983 -978 1016 -993 89 -41 194 10 220 108 24 90 72 37 -922 1032 l-912 912 912 913 c786 787 913 917 922 952 27 100 -58 206 -164 205 -11 0 -38 -9 -60 -19z"/></g></svg>
+                    <span>"Mulțumim Krud pentru felul în care ne-ați găzduit! Mâncarea a fost delicioasă, serviciul ireproșabil și ambianța deosebită!"</span>
+                    <svg class="nextBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1545 4616 c-72 -32 -116 -121 -96 -193 9 -31 171 -198 923 -950 l913 -913 -911 -912 c-716 -716 -914 -921 -923 -949 -26 -83 38 -189 124 -205 91 -17 40 -62 1102 999 881 881 983 986 993 1025 25 97 86 30 -983 1101 -669 670 -984 979 -1012 992 -47 22 -88 23 -130 5z"/></g></svg>
+                </div>
+
+                <div class="sub-block">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1918 3083 c-94 -101 -202 -295 -260 -467 -28 -81 -31 -104 -32 -206 0 -95 4 -125 22 -171 44 -111 110 -177 221 -221 47 -19 76 -22 186 -22 125 -1 132 0 195 30 114 54 181 128 220 245 18 54 21 81 18 169 -3 93 -7 113 -34 170 -18 36 -47 83 -67 106 -40 45 -132 99 -189 109 -21 4 -38 10 -38 14 0 13 132 171 171 205 l41 35 -33 5 c-30 5 -361 46 -372 46 -2 0 -24 -21 -49 -47z"/><path d="M2897 3050 c-110 -139 -206 -329 -248 -492 -28 -107 -23 -243 12 -331 58 -149 208 -237 405 -237 133 0 233 39 316 121 86 86 124 202 115 347 -4 66 -11 96 -39 155 -55 114 -133 181 -248 210 l-50 13 63 79 c35 44 85 99 111 122 l47 42 -33 5 c-45 7 -362 46 -376 46 -7 0 -40 -36 -75 -80z"/></g></svg>
+                    <p>Cristina Turbatu</p>
+                </div>
+            </div>
+
+            <!-- #4 -->
+            <div class="block">
+                <div class="top-block">
+                    <svg class="prevBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="39px" height="39px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M3445 4611 c-28 -13 -343 -322 -1012 -992 -871 -873 -973 -978 -983 -1016 -25 -98 -86 -31 983 -1102 733 -734 983 -978 1016 -993 89 -41 194 10 220 108 24 90 72 37 -922 1032 l-912 912 912 913 c786 787 913 917 922 952 27 100 -58 206 -164 205 -11 0 -38 -9 -60 -19z"/></g></svg>
+                    <span>"Printre puținele restaurante de "fain" dining din Iași. Ingredientele sunt de calitate iar staff-ul este foarte profesionist. Recomand carnea de vită maturată! "</span>
+                    <svg class="nextBtn" version="1.0" xmlns="http://www.w3.org/2000/svg" width="39px" height="39px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1545 4616 c-72 -32 -116 -121 -96 -193 9 -31 171 -198 923 -950 l913 -913 -911 -912 c-716 -716 -914 -921 -923 -949 -26 -83 38 -189 124 -205 91 -17 40 -62 1102 999 881 881 983 986 993 1025 25 97 86 30 -983 1101 -669 670 -984 979 -1012 992 -47 22 -88 23 -130 5z"/></g></svg>
+                </div>
+
+                <div class="sub-block">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M1918 3083 c-94 -101 -202 -295 -260 -467 -28 -81 -31 -104 -32 -206 0 -95 4 -125 22 -171 44 -111 110 -177 221 -221 47 -19 76 -22 186 -22 125 -1 132 0 195 30 114 54 181 128 220 245 18 54 21 81 18 169 -3 93 -7 113 -34 170 -18 36 -47 83 -67 106 -40 45 -132 99 -189 109 -21 4 -38 10 -38 14 0 13 132 171 171 205 l41 35 -33 5 c-30 5 -361 46 -372 46 -2 0 -24 -21 -49 -47z"/><path d="M2897 3050 c-110 -139 -206 -329 -248 -492 -28 -107 -23 -243 12 -331 58 -149 208 -237 405 -237 133 0 233 39 316 121 86 86 124 202 115 347 -4 66 -11 96 -39 155 -55 114 -133 181 -248 210 l-50 13 63 79 c35 44 85 99 111 122 l47 42 -33 5 c-45 7 -362 46 -376 46 -7 0 -40 -36 -75 -80z"/></g></svg>
+                    <p>Ștefan Dominte</p>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

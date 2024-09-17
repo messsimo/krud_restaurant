@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
@@ -22,7 +22,7 @@ a {
 
 button {
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
@@ -183,4 +183,68 @@ video {
 
 .temp-3 .temp-3--text-a a:hover {
     background-color: #b32121;
+}
+
+/* Стили для блока с отызвами */
+.reviews {
+    padding: 100px 300px;
+}
+
+.reviews h2 {
+    font-family: "Great Vibes", Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    text-align: center;
+    color:#999966;
+}
+
+.reviews .reviews-container {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.reviews .reviews-container .block {
+    display: none
+}
+
+.reviews .reviews-container .block.active-review {
+    display: block;
+}
+
+
+.reviews .reviews-container .block .top-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews .reviews-container .block .top-block span {
+    padding: 0 50px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+.reviews .reviews-container .block .top-block svg {
+
+    margin-top: 20px;
+}
+
+.reviews .reviews-container .block .sub-block {
+    display: grid;
+    place-items: center;
+}
+
+.reviews .reviews-container .block .sub-block svg {
+    height: 50px;
+    width: 50px;
+}
+
+.reviews .reviews-container .block .sub-block p {
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    margin-top: -15px;
 }
