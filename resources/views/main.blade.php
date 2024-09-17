@@ -147,4 +147,19 @@
             </div>
         </div>
     </div>
+
+    <!-- Блок для бронирования -->
+    <div class="booking">
+        <div class="booking-text">
+            <h2>Rezervări</h2>
+            <p>Strada Dimitrie Ralet 1, Iași</p>
+            <p>+40 771 103.904</p>
+            <p>Orar 12:00 - 23:00</p>
+
+            <a href="">Rezervă o masă</a>
+        </div>
+        <div class="map" id="map">
+
+        </div>
+    </div>
 @endsection

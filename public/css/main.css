@@ -248,3 +248,54 @@ video {
     font-weight: 200;
     margin-top: -15px;
 }
+
+/* Стили для блока с бронированием */
+.booking {
+    display: flex;
+}
+
+.booking .map {
+    width: 50%;
+}
+
+.booking .booking-text {
+    width: 50%;
+    background-color: #000000;
+    display: grid;
+    place-items: center;
+    padding: 100px 0;
+}
+
+.booking .booking-text h2 {
+    color: #999966;
+    font-family: "Great Vibes", Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 300;
+    /* padding-top: 50px; */
+    padding-bottom: 25px;
+}
+
+.booking .booking-text p {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.booking .booking-text p:last-child {
+    padding-bottom: 0;
+}
+
+.booking .booking-text a {
+    background-color: #cd2122;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-top: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.booking .booking-text a:hover {
+    background-color:#b32121 ;
+}
