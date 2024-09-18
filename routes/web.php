@@ -11,3 +11,5 @@ Route::get('/', function () {
 
 // Отслеживание страницы бронирования
 Route::get('/booking', [bookingController::class, "showPage"])->name("booking");
+// Обработка формы бронирования стола
+Route::post('/booking', [bookingController::class, "bookingForm"])->name("booking_form");

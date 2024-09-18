@@ -46,7 +46,8 @@
     <div class="booking-form">
         <h2>Rezervați o masă</h2>
 
-        <form action="">
+        <form action="{{ route('booking_form') }}" method="POST">
+            @csrf
             <div class="inputs-top">
                 <div>
                     <label for="data">Data</label><br>
@@ -80,15 +81,21 @@
             <input class="input-bottom" type="text" name="telefon" id="telefon"><br>
 
             <!-- Вывод ошибок/успешных сессий -->
-            <!-- <div class="alert">
+            @if($errors->any())
+            <div class="alert">
+                @foreach ($errors->all() as $el) 
                 <ul>
-                    <li></li>
+                    <li>{{ $el }}</li>
                 </ul>
-            </div> -->
+                @endforeach
+            </div>
+            @endif
 
-            <!-- <div class="alert success">
-                <span></span>
-            </div> -->
+            @if (session("success"))
+            <div class="alert success">
+                <span>{{ session('success') }}</span>
+            </div>
+            @endif
 
             <button type="submit">Rezervă</button>
         </form>
