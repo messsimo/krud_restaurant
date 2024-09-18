@@ -1,0 +1,137 @@
+/* Стили для блока Hero */
+.hero-booking {
+    background-image: url('/images/booking.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.hero-booking h1 {
+    font-size: 110px;    
+    font-family: "Great Vibes", system-ui;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 300px;
+}
+
+/* Стили для формы */
+.booking-form {
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+.booking-form h2 {
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.booking-form form {
+    width: 700px;
+}
+
+.booking-form form .inputs-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.booking-form form .inputs-top label {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.booking-form form .inputs-top input {
+    background-color: white;
+    border: 2px solid #dedede;
+    color: black;
+    font-size: 12px;
+    padding: 4px 125px 4px 5px;
+    outline: none;
+}
+
+.booking-form form .inputs-top select {
+    /* padding: 4px 125px 4px 5px; */
+    border-radius: 4px;
+    border: 2px solid #dedede;
+    font-size: 12px;
+    color: black;
+    outline: none;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.booking-form form h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    /* padding-bottom: 15px; */
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.booking-form form .label-bottom {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.booking-form form .input-bottom {
+    background-color: white;
+    border: 2px solid #dedede;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.booking-form form button {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 25px;
+    transition: all .2s ease-out;
+    color: black;
+    background-color: #cc9933;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    margin-top: 15px;
+}
+
+.booking-form form button:hover {
+    background-color: #bb8d31; 
+}
+
+.booking-form form .alert {
+    width: 99%;
+    border-radius: 2px;
+    padding: 5px 0;
+    padding-left: 10px;
+    background-color:  #f8d7da;
+}
+
+.booking-form form .alert span,
+.booking-form form .alert ul li {
+    font-size: 14px;
+}
+
+.booking-form form .alert ul {
+    list-style: none;
+}
+
+.booking-form form .success {
+    background-color: #d4edda;
+}

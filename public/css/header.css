@@ -33,6 +33,7 @@ header nav a:hover {
     color: #cc9933;
 }
 
+header nav .active2,
 header nav .active {
     color: #cc9933;
 }
@@ -43,8 +44,20 @@ header nav .active::after {
     /* bottom: -5px; */
     left: 23px;
     top: 25px;
-    width: 2px;
-    height: 20px; 
+    width: 1px;
+    height: 15px; 
+    background-color: #cc9933;
+    border-radius: 10px;
+}
+
+header nav .active2::after {
+    content: "";
+    position: absolute;
+    /* bottom: -5px; */
+    left: 31px;
+    top: 25px;
+    width: 1px;
+    height: 15px; 
     background-color: #cc9933;
     border-radius: 10px;
 }

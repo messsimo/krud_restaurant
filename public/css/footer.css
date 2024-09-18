@@ -1,9 +1,9 @@
 /* Стили для футера */
 footer {
-    background-color: black;
+    background-color: #2c2c2c;
     display: flex;
     justify-content: space-between;
-    padding: 100px 400px;
+    padding: 50px 400px;
 }
 
 footer nav a {

@@ -14,7 +14,7 @@
 
         <nav>
             <a href="/" class="active">Acasă</a>
-            <a href="">Rezervări</a>
+            <a href="{{ route('booking') }}">Rezervări</a>
             <a href="">Livrări</a>
             <a href="">Meniu</a>
             <a href="">Contact</a>
