@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Подключение CSS -->
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
-    <!-- Подключаем CSS файл Leaflet -->
+    <!-- Подключение CSS файл Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     
     <title>@yield("title")</title>
@@ -16,24 +17,27 @@
     <!-- Подключение секций -->
     @yield("main")
 
+    <!-- Подключение блока с футером -->
+    @extends("blocks.footer")
+
     <!-- Подключение JavaScript -->
     <script src="{{ asset('js/slider-review.js') }}"></script>
 
-    <!-- Подключаем JS файл Leaflet -->
+    <!-- Подключение JS файл Leaflet -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 <script>
-    // Создаем карту и настраиваем её центр и масштаб
+    // Карта с координатами
     var map = L.map('map').setView([47.155445,27.595572], 13);
 
-    // Добавляем слой карты с OpenStreetMap
+    // Слой карты от OSM
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Добавляем маркер на карту
+    // Маркер по координатам на карте
     var marker = L.marker([47.155445,27.595572]).addTo(map)
-        .bindPopup('Your location')
+        .bindPopup('Krud Restaurant')
         .openPopup();
 </script>
 </body>

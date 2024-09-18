@@ -1,0 +1,64 @@
+/* Стили для футера */
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 400px;
+}
+
+footer nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 7px;
+    transition: 0.2s ease-in-out;
+}
+
+footer nav a:hover {
+    color: #cc9933;
+}
+
+footer .socials {
+    padding-top: 50px;
+}
+
+footer .socials a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer .socials a:last-child {
+    margin-right: 0;
+}
+
+footer .socials svg {
+    width: 22px;
+    height: 22px;
+}
+
+footer .socials svg g {
+    fill: #949494;
+    transition: 0.1s ease-in-out;
+}
+
+footer .socials svg g:hover {
+    fill:#cc9933;
+}
+
+footer .info p:first-child {
+    color: #cc9933;
+}
+
+footer .info p {
+    font-size: 14px;
+    color: white;
+}
+
+footer .info span {
+    margin-bottom: 2px;
+    color:#949494;
+    display: block;
+    font-size: 12px;
+}
