@@ -48,4 +48,17 @@
         <p>• 5 lei pe raza orașului Iași</p>
         <p>• 21 lei în zonele limitrofe - Valea Adâncă, Valea Lupului, Miroslava, Horpaz, Lunca Cetățuii, Bârnova, Păun, Tomești, Holboca, Dancu, Aroneanu, Dorobanț, Breazu, Rediu, Cârlig</p>
     </div>
+
+    <!-- Блок с категориями -->
+    <div class="categories">
+        <h2>Restaurant</h2>
+
+        <div class="container">
+            @foreach ($categories as $el)
+            <div class="block">
+                <a href=""><img src="{{ asset('cover_images/' . $el->photo) }}" alt="{{ $el->name}}"></a>
+            </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
