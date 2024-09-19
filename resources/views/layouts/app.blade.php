@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/booking.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/delivery.css') }}">
 
     <!-- Подключение CSS файл Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
@@ -18,6 +19,7 @@
     <!-- Подключение секций -->
     @yield("main")
     @yield("booking")
+    @yield("delivery")
 
     <!-- Подключение блока с футером -->
     @extends("blocks.footer")

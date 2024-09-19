@@ -1,0 +1,34 @@
+/* Стили для блкоа Hero */
+.hero-delivery {
+    background-image: url('/images/delivery.jpg');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.hero-delivery h1 {
+    font-size: 110px;    
+    font-family: "Great Vibes", system-ui;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 300px;
+}
+
+/* Стили для блока с ценами на доставку */
+.delivery-taxes {
+    padding: 25px 100px;
+}
+
+.delivery-taxes h2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.delivery-taxes p {
+    font-size: 12px;
+    font-weight: 300;
+}

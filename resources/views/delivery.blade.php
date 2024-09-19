@@ -3,19 +3,19 @@
 
 <!-- Динамическое название сайта -->
 @section("title")
-    Krud | Rezervări
+    Krud | Livrări
 @endsection
 
 <!-- Секция страницы -->
-@section("booking")
+@section("delivery")
     <!-- Щапка сайта -->
     <header>
         <img src="{{ asset('images/logo.png') }}" alt="Krud">
 
         <nav>
             <a href="/">Acasă</a>
-            <a href="{{ route('booking') }}" class="active2">Rezervări</a>
-            <a href="{{ route('delivery') }}">Livrări</a>
+            <a href="{{ route('booking') }}">Rezervări</a>
+            <a href="{{ route('delivery') }}" class="active">Livrări</a>
             <a href="">Meniu</a>
             <a href="">Contact</a>
         </nav>
@@ -37,67 +37,15 @@
         </div>
     </header>
 
-    <!-- Блок Hero -->
-    <div class="hero-booking">
-        <h1>Rezervări</h1>
+    <!-- Hero блок -->
+    <div class="hero-delivery">
+        <h1>Livrări</h1>
     </div>
 
-    <!-- Форма -->
-    <div class="booking-form">
-        <h2>Rezervați o masă</h2>
-
-        <form action="{{ route('booking_form') }}" method="POST">
-            @csrf
-            <div class="inputs-top">
-                <div>
-                    <label for="data">Data</label><br>
-                    <input type="date" name="data" id="data">
-                </div>
-                <div>
-                    <label for="time">Ora</label><br>
-                    <input type="time" name="time" id="time">
-                </div>
-
-                <div>
-                    <label for="people">Număr persoane</label><br>
-                    <select name="people" id="people">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-                </div>
-            </div>
-
-            <h3>Date de contact</h3>
-
-            <label class="label-bottom" for="name">Nume</label><br>
-            <input class="input-bottom" type="text" name="name" id="name"><br>
-            <label class="label-bottom" for="email">Email</label><br>
-            <input class="input-bottom" type="email" name="email" id="email"><br>
-            <label class="label-bottom" for="telefon">Telefon</label><br>
-            <input class="input-bottom" type="text" name="telefon" id="telefon"><br>
-
-            <!-- Вывод ошибок/успешных сессий -->
-            @if($errors->any())
-            <div class="alert">
-                @foreach ($errors->all() as $el) 
-                <ul>
-                    <li>{{ $el }}</li>
-                </ul>
-                @endforeach
-            </div>
-            @endif
-
-            @if (session("success"))
-            <div class="alert success">
-                <span>{{ session('success') }}</span>
-            </div>
-            @endif
-
-            <button type="submit">Rezervă</button>
-        </form>
+    <!-- Блок с ценами на доставку -->
+    <div class="delivery-taxes">
+        <h2>TAXĂ DE LIVRARE:</h2>
+        <p>• 5 lei pe raza orașului Iași</p>
+        <p>• 21 lei în zonele limitrofe - Valea Adâncă, Valea Lupului, Miroslava, Horpaz, Lunca Cetățuii, Bârnova, Păun, Tomești, Holboca, Dancu, Aroneanu, Dorobanț, Breazu, Rediu, Cârlig</p>
     </div>
 @endsection

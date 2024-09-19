@@ -4,7 +4,7 @@
     <nav>
         <a href="/">Acasă</a>
         <a href="{{ route('booking') }}">Rezervări</a>
-        <a href="">Livrări</a>
+        <a href="{{ route('delivery') }}">Livrări</a>
         <a href="">Meniu</a>
         <a href="">Contact</a>
     </nav>

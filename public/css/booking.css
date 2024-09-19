@@ -1,8 +1,10 @@
 /* Стили для блока Hero */
 .hero-booking {
     background-image: url('/images/booking.jpg');
-    background-size: cover;
+    background-size: contain; 
+    background-position: center; 
     background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
 }
 
