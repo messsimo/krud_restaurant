@@ -3,11 +3,11 @@
 
 <!-- Динамическое название сайта -->
 @section("title")
-    Krud | Livrări
+    Krud | {{ $dishes->first()->category }}
 @endsection
 
 <!-- Секция страницы -->
-@section("delivery")
+@section("dishes")
     <!-- Щапка сайта -->
     <header>
         <img src="{{ asset('images/logo.png') }}" alt="Krud">
@@ -15,7 +15,7 @@
         <nav>
             <a href="/">Acasă</a>
             <a href="{{ route('booking') }}">Rezervări</a>
-            <a href="{{ route('delivery') }}" class="active">Livrări</a>
+            <a href="{{ route('delivery') }}">Livrări</a>
             <a href="">Meniu</a>
             <a href="">Contact</a>
         </nav>
@@ -37,26 +37,26 @@
         </div>
     </header>
 
-    <!-- Hero блок -->
-    <div class="hero-delivery">
-        <h1>Livrări</h1>
+    <!-- Блок навигации -->
+    <div class="navigation">
+        <span>Home / Livrări / {{ $dishes->first()->category }}</span>
+        <hr>
     </div>
 
-    <!-- Блок с ценами на доставку -->
-    <div class="delivery-taxes">
-        <h2>TAXĂ DE LIVRARE:</h2>
-        <p>• 5 lei pe raza orașului Iași</p>
-        <p>• 21 lei în zonele limitrofe - Valea Adâncă, Valea Lupului, Miroslava, Horpaz, Lunca Cetățuii, Bârnova, Păun, Tomești, Holboca, Dancu, Aroneanu, Dorobanț, Breazu, Rediu, Cârlig</p>
-    </div>
+    <!-- Блок с выводом блюд -->
+    <div class="dishes">
+        <h2>{{ $dishes->first()->category }}</h2>
 
-    <!-- Блок с категориями -->
-    <div class="categories">
-        <h2>Restaurant</h2>
+        <div class="container-dishes">
+            @foreach ($dishes as $el) 
+            <div class="block-dishes">
+                <img src="{{ asset('cover_images/' . $el->photo) }}" alt="{{ $el->name }}">
 
-        <div class="container">
-            @foreach ($categories as $el)
-            <div class="block">
-                <a href="{{ route('dishes', $el->name) }}"><img src="{{ asset('cover_images/' . $el->photo) }}" alt="{{ $el->name}}"></a>
+                <div class="text">
+                    <a href="">Cumpără</a>
+                    <p>{{ $el->name }}</p>
+                    <p class="price">{{ $el->price }}</p>
+                </div>
             </div>
             @endforeach
         </div>

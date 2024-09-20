@@ -35,7 +35,7 @@
 
 /* Стили для категорий */
 .categories {
-    padding: 50px 100px;
+    padding: 0px 100px 50px 100px;
 }
 
 .categories h2 {
@@ -44,13 +44,13 @@
 }
 
 .categories .container {
-    padding-top: 25px;
+    padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .categories .container .block {
-    background-color: #ddd;
+    background-color: #bebebe;
     margin: 2px;
     transition: 0.2s ease-in-out;
 }
@@ -59,4 +59,93 @@
     background-color: transparent;
     border: 2px solid #c93;
     margin: 0;
+}
+
+
+/* Стили для старницы с товарами */
+.navigation {
+    margin: 15px 100px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.navigation span {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.navigation hr {
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* Cтили для вывода блюл */
+.dishes {
+    padding: 25px 100px 50px 100px;
+}
+
+.dishes h2 {
+    font-size: 38px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.dishes .container-dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+ 
+.dishes .container-dishes .block-dishes {
+    margin: 5px;
+    transition: 0.2s ease-in-out;
+    position: relative;
+}
+
+.dishes .container-dishes .block-dishes img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: -7px;
+}
+
+.dishes .container-dishes .block-dishes:hover {
+    border: 2px solid #c93;
+}
+
+
+.dishes .container-dishes .block-dishes .text {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+    /* left: -1.5px; */
+    height: 100%;
+    width: 100%;
+    transform: translateY(-100%);
+}
+
+.dishes .container-dishes .block-dishes:hover .text {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.dishes .container-dishes .block-dishes:hover .text a {
+    color: #ddd;
+    border: 1px solid white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.dishes .container-dishes .block-dishes:hover .text p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.dishes .container-dishes .block-dishes:hover .text .price {
+    color: #c93;
 }

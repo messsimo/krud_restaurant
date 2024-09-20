@@ -20,6 +20,7 @@
     @yield("main")
     @yield("booking")
     @yield("delivery")
+    @yield("dishes")
 
     <!-- Подключение блока с футером -->
     @extends("blocks.footer")

@@ -17,3 +17,5 @@ Route::post('/booking', [bookingController::class, "bookingForm"])->name("bookin
 
 // Отслеживание страницы доставки
 Route::get('/delivery', [deliveryController::class, "showDelivery"])->name("delivery");
+// Перенаправление на страницу блюд
+Route::get('/delivery/{category}', [deliveryController::class, "showDishes"])->name("dishes");
