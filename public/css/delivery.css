@@ -149,3 +149,65 @@
 .dishes .container-dishes .block-dishes:hover .text .price {
     color: #c93;
 }
+
+
+/* Стили для блока с выводом информации о товаре */
+.dishInfo {
+    padding: 50px 100px;
+    display: flex;
+}
+
+.dishInfo img {
+    width: 350px; 
+    height: 350px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.dishInfo .dishInfo-container {
+    width: 500px;
+}
+
+.dishInfo .dishInfo-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.dishInfo .dishInfo-container p {
+    color:#c93;
+    padding-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.dishInfo .dishInfo-container span {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.dishInfo .dishInfo-container .nutrition-span {
+    padding-bottom: 35px;
+}
+
+.dishInfo .dishInfo-container a {
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #c93;
+    padding: 10px 25px;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.dishInfo .dishInfo-container a:hover {
+    background-color: rgb(186, 138, 44);
+}
+
+.dishInfo .dishInfo-container .category-span {
+    padding-top: 15px;
+}

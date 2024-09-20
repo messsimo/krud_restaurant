@@ -18,11 +18,23 @@ class deliveryController extends Controller {
 
     // Функция отображения блюд категории
     public function showDishes($category) {
-        // Подключение к таблице
-        $dishes = new dishes();
+        // Получение списка блюд по категории
+        $dishes = dishes::where('category', $category)->get();
+    
+        // Передача данных во вьюху
+        return view('dishes', [
+            'dishes' => $dishes
+        ]);
+    }
 
-        // Выборка элементов из таблицы + вывод
-        return view("dishes", ["dishes" => $dishes->where("category", $category)->get()]);
-
+    // Функция отображения страницы блюда
+    public function infoDish($id) {
+        // Поиск блюда по ID
+        $dishInfo = dishes::find($id);
+    
+        // Передача данных в шаблон
+        return view('product', [
+            'dishInfo' => $dishInfo
+        ]);
     }
 }

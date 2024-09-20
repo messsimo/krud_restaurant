@@ -3,11 +3,11 @@
 
 <!-- Динамическое название сайта -->
 @section("title")
-    Krud | {{ $dishes->first()->category }}
+    Krud | {{ $dishInfo->name }}
 @endsection
 
 <!-- Секция страницы -->
-@section("dishes")
+@section("infoDish")
     <!-- Щапка сайта -->
     <header>
         <img src="{{ asset('images/logo.png') }}" alt="Krud">
@@ -39,26 +39,21 @@
 
     <!-- Блок навигации -->
     <div class="navigation">
-        <span>Home / Livrări / {{ $dishes->first()->category }}</span>
+        <span>Home / Livrări / {{ $dishInfo->first()->name }}</span>
         <hr>
     </div>
 
-    <!-- Блок с выводом блюд -->
-    <div class="dishes">
-        <h2>{{ $dishes->first()->category }}</h2>
+    <!-- Блок с информацией о блюде -->
+    <div class="dishInfo">
+        <img src="{{ asset('cover_images/' . $dishInfo->photo) }}" alt="{{ $dishInfo->name }}">
 
-        <div class="container-dishes">
-            @foreach ($dishes as $el) 
-            <div class="block-dishes">
-                <img src="{{ asset('cover_images/' . $el->photo) }}" alt="{{ $el->name }}">
-
-                <div class="text">
-                    <a href="{{ route('info_dish', $el->id) }}">Cumpără</a>
-                    <p>{{ $el->name }}</p>
-                    <p class="price">{{ $el->price }}</p>
-                </div>
-            </div>
-            @endforeach
+        <div class="dishInfo-container">
+            <h2>{{ $dishInfo->name }}</h2>
+            <p>{{ $dishInfo->price }}</p>
+            <span>{{ $dishInfo->description }}</span>
+            <span class="nutrition-span">{{ $dishInfo->nutritional_info }}</span>
+            <a href="">Adaugă în coș</a>
+            <span class="category-span">Сategorie: {{ $dishInfo->category }}</span>
         </div>
     </div>
 @endsection
