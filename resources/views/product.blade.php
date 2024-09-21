@@ -16,7 +16,7 @@
             <a href="/">Acasă</a>
             <a href="{{ route('booking') }}">Rezervări</a>
             <a href="{{ route('delivery') }}">Livrări</a>
-            <a href="">Meniu</a>
+            <a href="{{ route('menu') }}">Meniu</a>
             <a href="">Contact</a>
         </nav>
 

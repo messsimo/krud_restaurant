@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 // Подключение контроллера
 use App\Http\Controllers\bookingController;
 use App\Http\Controllers\deliveryController;
+use App\Http\Controllers\menuController;
 
 // Отслеживание главной страницы
 Route::get('/', function () {
@@ -21,3 +22,6 @@ Route::get('/delivery', [deliveryController::class, "showDelivery"])->name("deli
 Route::get('/delivery/{category}', [deliveryController::class, "showDishes"])->name("dishes");
 // Перенаправление на страницу конкретного блюда
 Route::get('/delivery_dish/{id}', [deliveryController::class, "infoDish"])->name("info_dish");
+
+// Отслеживание страницы с меню
+Route::get('/menu', [menuController::class, "showMenu"])->name("menu");
