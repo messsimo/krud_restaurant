@@ -17,7 +17,7 @@
             <a href="{{ route('booking') }}">Rezervări</a>
             <a href="{{ route('delivery') }}">Livrări</a>
             <a href="{{ route('menu') }}" class="active3">Meniu</a>
-            <a href="">Contact</a>
+            <a href="{{ route('contact') }}">Contact</a>
         </nav>
 
         <div class="cart">

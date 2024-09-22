@@ -3,21 +3,21 @@
 
 <!-- Динамическое название сайта -->
 @section("title")
-    Krud | Livrări
+    Krud | Contact
 @endsection
 
 <!-- Секция страницы -->
-@section("delivery")
-    <!-- Щапка сайта -->
+@section("contact")
+<!-- Щапка сайта -->
     <header>
         <img src="{{ asset('images/logo.png') }}" alt="Krud">
 
         <nav>
             <a href="/">Acasă</a>
             <a href="{{ route('booking') }}">Rezervări</a>
-            <a href="{{ route('delivery') }}" class="active">Livrări</a>
+            <a href="{{ route('delivery') }}">Livrări</a>
             <a href="{{ route('menu') }}">Meniu</a>
-            <a href="{{ route('contact') }}">Contact</a>
+            <a href="{{ route('contact') }}" class="active4">Contact</a>
         </nav>
 
         <div class="cart">
@@ -37,28 +37,54 @@
         </div>
     </header>
 
-    <!-- Hero блок -->
-    <div class="hero-delivery">
-        <h1>Livrări</h1>
+    <!-- Блок Hero -->
+    <div class="hero-contact">
+        <h1>Contact</h1>
     </div>
 
-    <!-- Блок с ценами на доставку -->
-    <div class="delivery-taxes">
-        <h2>TAXĂ DE LIVRARE:</h2>
-        <p>• 5 lei pe raza orașului Iași</p>
-        <p>• 21 lei în zonele limitrofe - Valea Adâncă, Valea Lupului, Miroslava, Horpaz, Lunca Cetățuii, Bârnova, Păun, Tomești, Holboca, Dancu, Aroneanu, Dorobanț, Breazu, Rediu, Cârlig</p>
-    </div>
+    <!-- Форма -->
+    <div class="contact-form">
+        <h2>Pentru contact puteți folosi formularul de mai jos</h2>
 
-    <!-- Блок с категориями -->
-    <div class="categories">
-        <h2>Restaurant</h2>
+        <form action="" method="POST">
+            @csrf
 
-        <div class="container">
-            @foreach ($categories as $el)
-            <div class="block">
-                <a href="{{ route('dishes', $el->name) }}"><img src="{{ asset('cover_images/' . $el->photo) }}" alt="{{ $el->name}}"></a>
+            <div class="top-form">
+                <div class="block">
+                    <label for="name">Nume</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="block">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="block">
+                    <label for="telefon">Telefon</label>
+                    <input type="text" name="telefon" id="telefon">
+                </div>
             </div>
-            @endforeach
-        </div>
+
+            <label for="message">Mesaj</label>
+            <textarea name="message" id="message"></textarea><br>
+
+            <!-- Вывод ошибок/успешных сессий -->
+            @if($errors->any())
+            <div class="alert">
+                @foreach ($errors->all() as $el) 
+                <ul>
+                    <li>{{ $el }}</li>
+                </ul>
+                @endforeach
+            </div>
+            @endif
+
+            @if (session("success"))
+            <div class="alert success">
+                <span>{{ session('success') }}</span>
+            </div>
+            @endif
+
+            <button type="submit">Trimite</button>
+        </form>
     </div>
 @endsection

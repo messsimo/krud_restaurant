@@ -17,7 +17,7 @@
             <a href="{{ route('booking') }}">Rezervări</a>
             <a href="{{ route('delivery') }}">Livrări</a>
             <a href="{{ route('menu') }}">Meniu</a>
-            <a href="">Contact</a>
+            <a href="{{ route('contact') }}">Contact</a>
         </nav>
 
         <div class="cart">
@@ -66,7 +66,7 @@
                 <span>Aici, se regăsesc laolaltă fructe și legume proaspete, lactate delicioase și preparate din carne savuroase, dulcețuri naturale și miere de diferite tipuri, zacuscă unică pregătită de bucătarii Krud și specialitățile culinare ale acestora.</span>
             </div>
 
-            <a href="">Vezi meniul</a>
+            <a href="{{ route('delivery') }}">Vezi meniul</a>
         </div>
 
         <img src="{{ asset('images/temp-img2.png') }}" alt="Krud Restaurant">
@@ -81,7 +81,7 @@
             <span>O experință culinară care vă va stimula simțurile.</span>
         </div>
         <div class="temp-3--text-a">
-            <a href="">VEZI DETALII</a>
+            <a href="{{ route('menu') }}">VEZI DETALII</a>
         </div>
     </div>
 

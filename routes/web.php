@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bookingController;
 use App\Http\Controllers\deliveryController;
 use App\Http\Controllers\menuController;
+use App\Http\Controllers\contactController;
 
 // Отслеживание главной страницы
 Route::get('/', function () {
@@ -25,3 +26,6 @@ Route::get('/delivery_dish/{id}', [deliveryController::class, "infoDish"])->name
 
 // Отслеживание страницы с меню
 Route::get('/menu', [menuController::class, "showMenu"])->name("menu");
+
+// Отслеживания страницы с контактом
+Route::get('/contact', [contactController::class, "showContact"])->name("contact");

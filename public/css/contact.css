@@ -1,0 +1,96 @@
+/* Стили для блока Hero */
+.hero-contact {
+    background-image: url('/images/temp-img4.png');
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.hero-contact h1 {
+    font-size: 110px;    
+    font-family: "Great Vibes", system-ui;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 300px;
+}
+
+/* Форма */
+.contact-form {
+    padding: 100px 100px;
+    display: grid;
+    place-items: center;
+}
+
+.contact-form h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.contact-form form {
+    width: 700px;
+}
+
+.contact-form form .top-form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.contact-form form .top-form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.contact-form form .top-form input {
+    color: #555;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form form label {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.contact-form form textarea {
+    width: 95%;
+    height: 150px;
+    color: #555;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form form button {
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px 25px;
+    transition: all .2s ease-out;
+    color: black;
+    background-color: #cc9933;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    margin-top: 15px;
+}
+
+.contact-form form button:hover {
+    background-color: #bb8d31; 
+}
