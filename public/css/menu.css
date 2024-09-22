@@ -16,3 +16,61 @@
     text-align: center;
     line-height: 300px;
 }
+
+/* Стили для блока меню */
+.menu {
+    padding: 50px 100px;
+}
+
+.menu .container {
+    padding-top: 25px;
+}
+
+.menu .container h2 {
+    text-align: center;
+    font-family: "Great Vibes", system-ui;
+    font-size: 56px;
+    color: #999966;
+    padding-bottom: 15px;
+}
+
+.menu .container .sub-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.menu .container .sub-container .block {
+    width: 350px;
+    margin-bottom: 25px;
+}
+
+.menu .container .sub-container .block table {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.menu .container .sub-container .block table td {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #1b1b1b;
+}
+
+.menu .container .sub-container .block table td:first-child {
+
+
+}
+
+.menu .container .sub-container .block table td:last-child {
+    float: right;
+    color: #cc9933;
+}
+
+.menu .container .sub-container .block span {
+    font-size: 10px;
+    line-height: 22px;
+    width: 100%;
+    text-align: left;
+    font-weight: 300;
+    color: #666666;
+}

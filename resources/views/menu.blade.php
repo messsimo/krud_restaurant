@@ -41,4 +41,235 @@
     <div class="hero-menu">
         <h1>Meniu</h1>
     </div>
+
+    <!-- Вывод блюд -->
+    <div class="menu">
+        <!-- Контайнер #1 -->
+        <div class="container">
+            <h2>Antreuri</h2>
+
+            <div class="sub-container">
+                @foreach ($product1 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #2 -->
+        <div class="container">
+            <h2>Salate</h2>
+
+            <div class="sub-container">
+                @foreach ($product2 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #3 -->
+        <div class="container">
+            <h2>Ciorbe și Supe</h2>
+
+            <div class="sub-container">
+            @foreach ($product3 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #4 -->
+        <div class="container">
+            <h2>Paste și Risotto</h2>
+
+            <div class="sub-container">
+                @foreach ($product4 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #5 -->
+        <div class="container">
+            <h2>Carne de Pasăre</h2>
+
+            <div class="sub-container">
+                @foreach ($product5 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #6 -->
+        <div class="container">
+            <h2>Carne de Porc</h2>
+
+            <div class="sub-container">
+                @foreach ($product6 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #7 -->
+        <div class="container">
+            <h2>Burgeri</h2>
+
+            <div class="sub-container">
+                @foreach ($product7 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #8 -->
+        <div class="container">
+            <h2>Pește</h2>
+
+            <div class="sub-container">
+                @foreach ($product8 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #9 -->
+        <div class="container">
+            <h2>Garnituri</h2>
+
+            <div class="sub-container">
+                @foreach ($product9 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #10 -->
+        <div class="container">
+            <h2>Sosuri</h2>
+
+            <div class="sub-container">
+                @foreach ($product10 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #11 -->
+        <div class="container">
+            <h2>Deserturi</h2>
+
+            <div class="sub-container">
+                @foreach ($product11 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- Контайнер #12 -->
+        <div class="container">
+            <h2>Meniu de Post</h2>
+
+            <div class="sub-container">
+                @foreach ($product12 as $el) 
+                <div class="block">
+                    <table>
+                        <tr>
+                            <td>{{ $el->name }}</td>
+                            <td>{{ $el->price }}</td>
+                        </tr>
+                    </table>
+                    <span>{{ $el->description }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
 @endsection 

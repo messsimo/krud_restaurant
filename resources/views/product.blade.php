@@ -39,7 +39,7 @@
 
     <!-- Блок навигации -->
     <div class="navigation">
-        <span>Home / Livrări / {{ $dishInfo->first()->name }}</span>
+        <span>Home / Livrări / {{ $dishInfo->name }}</span>
         <hr>
     </div>
 

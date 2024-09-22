@@ -22,7 +22,7 @@ header nav a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     margin-right: 100px;
     transition: color 0.1s ease-in-out;
@@ -43,10 +43,10 @@ header nav .active::after {
     content: "";
     position: absolute;
     /* bottom: -5px; */
-    left: 23px;
+    left: 19px;
     top: 25px;
     width: 1px;
-    height: 15px; 
+    height: 10px; 
     background-color: #cc9933;
     border-radius: 10px;
 }
@@ -55,10 +55,10 @@ header nav .active2::after {
     content: "";
     position: absolute;
     /* bottom: -5px; */
-    left: 31px;
+    left: 28px;
     top: 25px;
     width: 1px;
-    height: 15px; 
+    height: 10px; 
     background-color: #cc9933;
     border-radius: 10px;
 }
@@ -67,10 +67,10 @@ header nav .active3::after {
     content: "";
     position: absolute;
     /* bottom: -5px; */
-    left: 22px;
+    left: 18px;
     top: 25px;
     width: 1px;
-    height: 15px; 
+    height: 10px; 
     background-color: #cc9933;
     border-radius: 10px;
 }
