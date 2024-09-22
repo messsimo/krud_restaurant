@@ -29,3 +29,5 @@ Route::get('/menu', [menuController::class, "showMenu"])->name("menu");
 
 // Отслеживания страницы с контактом
 Route::get('/contact', [contactController::class, "showContact"])->name("contact");
+// Отслеживание формы 
+Route::post('/contact', [contactController::class, "contactForm"])->name("contact_form");

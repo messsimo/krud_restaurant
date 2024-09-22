@@ -117,23 +117,21 @@
     background-color: #bb8d31; 
 }
 
-.booking-form form .alert {
-    width: 99%;
+.alert {
+    width: 98.5%;
     border-radius: 2px;
     padding: 5px 0;
     padding-left: 10px;
     background-color:  #f8d7da;
 }
 
-.booking-form form .alert span,
-.booking-form form .alert ul li {
+.alert span,
+.alert ul li {
     font-size: 14px;
 }
-
-.booking-form form .alert ul {
+.alert ul {
     list-style: none;
 }
-
-.booking-form form .success {
+.success {
     background-color: #d4edda;
 }

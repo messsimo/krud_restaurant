@@ -46,7 +46,7 @@
     <div class="contact-form">
         <h2>Pentru contact puteți folosi formularul de mai jos</h2>
 
-        <form action="" method="POST">
+        <form action="{{ route('contact_form') }}" method="POST">
             @csrf
 
             <div class="top-form">
@@ -87,4 +87,7 @@
             <button type="submit">Trimite</button>
         </form>
     </div>
+
+    <!-- Карта -->
+    <div class="map-сontact" id="map"></div>
 @endsection

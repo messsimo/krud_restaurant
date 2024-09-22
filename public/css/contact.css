@@ -94,3 +94,9 @@
 .contact-form form button:hover {
     background-color: #bb8d31; 
 }
+
+/* Стили для карты */
+.map-сontact {
+    width: 100%;
+    height: 400px;
+}
