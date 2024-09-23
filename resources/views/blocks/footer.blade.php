@@ -30,6 +30,6 @@
         <span>Strada Dimitrie Ralet 1</span>
         <span>Iași</span>
         <span>700108</span>
-        <span>Powered by myself</span>
+        <span>Powered by Daniel Mihai</span>
     </div>
 </footer>

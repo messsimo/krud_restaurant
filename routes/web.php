@@ -6,6 +6,7 @@ use App\Http\Controllers\bookingController;
 use App\Http\Controllers\deliveryController;
 use App\Http\Controllers\menuController;
 use App\Http\Controllers\contactController;
+use App\Http\Controllers\cartController;
 
 // Отслеживание главной страницы
 Route::get('/', function () {
@@ -31,3 +32,6 @@ Route::get('/menu', [menuController::class, "showMenu"])->name("menu");
 Route::get('/contact', [contactController::class, "showContact"])->name("contact");
 // Отслеживание формы 
 Route::post('/contact', [contactController::class, "contactForm"])->name("contact_form");
+
+// Отслеживание корзины
+Route::get("/cart", [cartController::class, "showCart"])->name("cart");

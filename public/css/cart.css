@@ -1,0 +1,151 @@
+/* Wrapper */
+.wrapper {
+    background-color: #efefef;
+    margin-top: -20px;
+}
+
+/* Стили для навигации */
+.cart-nav {
+    padding-top: 15px;
+}
+
+/* Стили для корзины */
+.user-cart {
+    padding: 25px 100px;
+}
+
+.user-cart h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.user-cart table {
+    width: 100%;
+    background-color: #ffff;
+    border-collapse: collapse;
+}
+
+.user-cart table thead tr th {
+    text-align: center;
+    background-color: #e6e5e5;
+    padding: 10px 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.user-cart table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.user-cart table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.user-cart table tbody tr td {
+    text-align: center;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
+.user-cart table tbody tr td svg {
+    transition: 0.2s ease-in-out;
+}
+
+.user-cart table tbody tr td svg:hover {
+    width: 38px;
+    height: 38px;
+}
+
+.user-cart table tbody tr .td-item {
+    display: flex;
+}
+
+.user-cart table tbody tr .td-item img {
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+}
+
+.user-cart table tbody tr .td-item span {
+    font-size: 14px;
+}
+
+.user-cart table tbody tr td {
+    font-size: 14px;
+}
+
+.user-cart table tbody tr td input {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    outline: none;
+}
+
+.user-cart .additional-info {
+    background-color: #ffff;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.user-cart .additional-info h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.user-cart .additional-info .additional-info--top,
+.user-cart .additional-info .additional-info--middle,
+.user-cart .additional-info .additional-info--bottom {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.user-cart .additional-info .additional-info--middle {
+    padding: 15px 0;
+}
+
+.user-cart .additional-info .additional-info--bottom {
+    padding: 15px 0;
+}
+
+.user-cart .additional-info .additional-info--top p,
+.user-cart .additional-info .additional-info--middle p,
+.user-cart .additional-info .additional-info--bottom p
+ {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.user-cart .additional-info .additional-info--top span,
+.user-cart .additional-info .additional-info--middle span,
+.user-cart .additional-info .additional-info--bottom span{
+    font-size: 14px;
+}
+
+.user-cart .additional-info .additional-info--middle span {
+    padding-left: 10px;
+}
+
+.user-cart .additional-info button {
+    width: 100%;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+}
+
+.user-cart .additional-info button:hover {
+    background-color: rgb(30, 30, 30);
+}

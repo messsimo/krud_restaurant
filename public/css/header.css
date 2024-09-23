@@ -89,14 +89,21 @@ header nav .active4::after {
 }
 
 header .cart {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     height: 50px;
     background-color: #1a1c20;
     /* line-height: 150px; */
     margin-top: 50px;
     margin-right: 50px;
+}
+
+header .cart a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 header .cart .cart-img {
@@ -109,7 +116,7 @@ header .cart .cart-img {
 header .cart svg {
     width: 20px;
     height: 20px;
-    margin-top: 14px;
+    margin-top: 9px;
 }
 
 header .cart .cart-block {
@@ -132,7 +139,7 @@ header .cart .cart-block span {
 }
 
 header .cart .cart-block p {
-    padding-top: 7px;
+    padding-top: 0px;
     color: white;
     font-size: 10px;
 }

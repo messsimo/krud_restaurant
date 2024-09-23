@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="{{ asset('css/delivery.css') }}">
     <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
 
     <!-- Подключение CSS файл Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Подключение иконки сайта -->
+    <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/png">
     
     <title>@yield("title")</title>
 </head>
@@ -26,6 +30,7 @@
     @yield("infoDish")
     @yield("menu")
     @yield("contact")
+    @yield("cart")
 
     <!-- Подключение блока с футером -->
     @extends("blocks.footer")
