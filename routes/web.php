@@ -35,3 +35,5 @@ Route::post('/contact', [contactController::class, "contactForm"])->name("contac
 
 // Отслеживание корзины
 Route::get("/cart", [cartController::class, "showCart"])->name("cart");
+// Отслеживание страницы обработки заказа
+Route::get("/checkout", [cartController::class, "showCheckout"])->name("checkout");

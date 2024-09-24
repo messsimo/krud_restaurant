@@ -31,6 +31,7 @@
     @yield("menu")
     @yield("contact")
     @yield("cart")
+    @yield("checkout")
 
     <!-- Подключение блока с футером -->
     @extends("blocks.footer")

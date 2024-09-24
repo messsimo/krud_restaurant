@@ -119,8 +119,7 @@
 
 .user-cart .additional-info .additional-info--top p,
 .user-cart .additional-info .additional-info--middle p,
-.user-cart .additional-info .additional-info--bottom p
- {
+.user-cart .additional-info .additional-info--bottom p {
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -135,17 +134,110 @@
     padding-left: 10px;
 }
 
+.user-cart .additional-info .additional-info--middle .additional-info--middle---block input[type="radio"] {
+    accent-color: black; 
+}
+
+.user-cart .additional-info .btn {
+    width: 100%;
+}
+
 .user-cart .additional-info button {
     width: 100%;
-    color: white;
     background-color: black;
-    border: none;
     padding: 10px 0;
     margin-top: 15px;
-    font-size: 14px;
     transition: 0.2s ease-in-out;
+    border: none;
+}
+
+.user-cart .additional-info button a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .user-cart .additional-info button:hover {
     background-color: rgb(30, 30, 30);
+}
+
+
+/* Стили для страница Checkout */
+.user-cart .h2-form {
+    padding-top: 50px;
+}
+
+.user-cart .h2-form h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.user-cart form {
+    width: 48%;
+    background-color: white;
+    /* margin-top: 50px; */
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.user-cart form label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.user-cart form input[type="text"] {
+    width: 95%;
+    /* padding-left: 10px; */
+    outline: none;
+    padding: 7px 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    color: #555;
+    background-color: #efefef;
+    border: 1px solid #ddd;
+}
+
+.user-cart form input[type="radio"] {
+    margin-right: 5px;
+    accent-color: black; 
+}
+
+.user-cart form .last-input {
+    margin-bottom: 15px;
+}
+
+.user-cart form  span {
+    font-size: 12px;
+}
+
+.user-cart form textarea {
+    width: 95%;
+    height: 100px;
+    padding: 7px 10px;
+    color: #555;
+    background-color: #efefef;
+    border: 1px solid #ddd;
+    margin-top: 3px;
+    outline: none;
+}
+
+.user-cart form button {
+    width: 98.5%;
+    background-color: black;
+    padding: 10px 0;
+    margin-top: 15px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.user-cart form button:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.user-cart form .alert {
+    width: 97%;
 }

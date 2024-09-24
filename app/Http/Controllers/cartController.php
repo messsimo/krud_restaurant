@@ -9,4 +9,9 @@ class cartController extends Controller {
     public function showCart() {
         return view("cart");
     }
+
+    // Функция обработки страницы товара
+    public function showCheckout() {
+        return view("checkout");
+    }
 }
