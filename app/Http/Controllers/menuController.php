@@ -11,6 +11,24 @@ class menuController extends Controller {
         // Подключение к таблице
         $dishes = new dishes();
 
+        // Корзина
+        $cart = session('cart', []);
+
+        // Пересчет общей цены
+        $subtotal = 0;
+        foreach ($cart as $el) {
+            $price = (float) $el['price'];
+            $quantity = (int) $el['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
+        // Подсчет общего кол-во блюд
+        $totalItems = 0;
+        foreach ($cart as $el) {
+            $quantity = (int) $el['quantity'];
+            $totalItems += $quantity;
+        }
+
         // Вывод информации из таблиц
         return view("menu", [
             "product1" => $dishes->where("category", "=", "Antreuri")->get(),
@@ -24,7 +42,10 @@ class menuController extends Controller {
             "product9" => $dishes->where("category", "=", "Garnituri")->get(),
             "product10" => $dishes->where("category", "=", "Sosuri")->get(),
             "product11" => $dishes->where("category", "=", "Deserturi")->get(),
-            "product12" => $dishes->where("category", "=", "Meniu de Post")->get()
+            "product12" => $dishes->where("category", "=", "Meniu de Post")->get(),
+            'cart' => $cart,
+            'subtotal' => $subtotal,
+            'totalItems' => $totalItems,
         ]);
     }
 }

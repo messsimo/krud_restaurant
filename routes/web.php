@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 // Подключение контроллера
+use App\Http\Controllers\mainController;
 use App\Http\Controllers\bookingController;
 use App\Http\Controllers\deliveryController;
 use App\Http\Controllers\menuController;
@@ -9,9 +10,7 @@ use App\Http\Controllers\contactController;
 use App\Http\Controllers\cartController;
 
 // Отслеживание главной страницы
-Route::get('/', function () {
-    return view('main');
-});
+Route::get('/', [mainController::class, "showMain"])->name("main");
 
 // Отслеживание страницы бронирования
 Route::get('/booking', [bookingController::class, "showPage"])->name("booking");
@@ -37,3 +36,7 @@ Route::post('/contact', [contactController::class, "contactForm"])->name("contac
 Route::get("/cart", [cartController::class, "showCart"])->name("cart");
 // Отслеживание страницы обработки заказа
 Route::get("/checkout", [cartController::class, "showCheckout"])->name("checkout");
+// Добавление блюда в корзину
+Route::get("/cart/add/{id}", [cartController::class, "addItem"])->name("addItem");
+// Удаление блюда из корзины
+Route::get("/cart/delete/{id}", [cartController::class, "deleteItem"])->name("deleteItem");

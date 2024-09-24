@@ -12,8 +12,32 @@ class deliveryController extends Controller {
         // Подключение к таблице
         $categories = new categories();
 
-        // Передаяа данных в шаблон
-        return view("delivery", ["categories" => $categories->all()]);
+        // Корзина
+        $cart = session('cart', []);
+
+        // Пересчет общей цены
+        $subtotal = 0;
+        foreach ($cart as $el) {
+            $price = (float) $el['price'];
+            $quantity = (int) $el['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
+        // Подсчет общего кол-во блюд
+        $totalItems = 0;
+        foreach ($cart as $el) {
+            $quantity = (int) $el['quantity'];
+            $totalItems += $quantity;
+        }
+
+        // Переадрессация
+        return view('delivery', [
+            'cart' => $cart,
+            'subtotal' => $subtotal,
+            'totalItems' => $totalItems,
+            'categories' => $categories->all(),
+        ]);
+        
     }
 
     // Функция отображения блюд категории

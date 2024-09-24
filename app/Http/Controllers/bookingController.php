@@ -11,7 +11,24 @@ use App\Models\booking;
 class bookingController extends Controller {
     // Функция отображения странциы
     public function showPage() {
-        return view("booking");
+        $cart = session('cart', []);
+
+        // Пересчет общей цены
+        $subtotal = 0;
+        foreach ($cart as $el) {
+            $price = (float) $el['price'];
+            $quantity = (int) $el['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
+        // Подсчет общего кол-во блюд
+        $totalItems = 0;
+        foreach ($cart as $el) {
+            $quantity = (int) $el['quantity'];
+            $totalItems += $quantity;
+        }
+
+        return view('booking', compact('cart', 'subtotal', 'totalItems'));
     }
 
     // Функция обработки формы бронирования

@@ -54,7 +54,7 @@
             <p>{{ $dishInfo->price }}</p>
             <span>{{ $dishInfo->description }}</span>
             <span class="nutrition-span">{{ $dishInfo->nutritional_info }}</span>
-            <a href="">Adaugă în coș</a>
+            <a href="{{ route('addItem', $dishInfo->id) }}">Adaugă în coș</a>
             <span class="category-span">Сategorie: {{ $dishInfo->category }}</span>
         </div>
     </div>

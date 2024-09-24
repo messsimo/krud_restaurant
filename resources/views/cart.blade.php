@@ -28,12 +28,12 @@
 
                 <div class="cart-block">
                     <span>Item(s)</span>
-                    <p>0</p>
+                    <p>{{ $totalItems }}</p>
                 </div>
 
                 <div class="cart-block">
                     <span>Total</span>
-                    <p class="cart-total">0,00 lei</p>
+                    <p class="cart-total">{{ $subtotal }} lei</p>
                 </div>
             </a>
         </div>
@@ -52,6 +52,7 @@
         <h1>Cart</h1>
 
         <!-- Таблица -->
+        @if (session('cart') != null && count(session('cart')) > 0)
         <table>
             <thead>
                 <tr>
@@ -63,16 +64,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.000000pt" height="26.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g fill="red" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M2260 4884 c-889 -121 -1627 -724 -1915 -1564 -197 -576 -162 -1212 98 -1762 127 -268 334 -547 545 -733 453 -400 985 -605 1572 -605 751 0 1449 354 1892 960 450 616 571 1416 323 2140 -202 588 -630 1072 -1190 1345 -228 111 -479 186 -738 220 -147 19 -443 18 -587 -1z m-485 -1265 c34 -9 99 -69 413 -382 l372 -371 373 371 c313 313 378 373 412 382 64 17 108 13 166 -16 92 -47 137 -150 109 -253 -11 -40 -50 -83 -383 -417 l-371 -373 371 -373 c333 -334 372 -377 383 -417 44 -167 -103 -314 -270 -270 -40 11 -83 50 -417 383 l-373 371 -372 -371 c-335 -333 -378 -372 -418 -383 -167 -44 -314 103 -270 270 11 40 50 83 383 418 l371 372 -371 373 c-333 334 -372 377 -383 417 -27 102 16 204 109 252 57 30 102 35 166 17z"/></g></svg></td>
-                    <td class="td-item">
-                        <img src="{{ asset('cover_images/') }}" alt="">
-                        <span></span>
-                    </td>
-                    <td></td>
-                    <td><input type="number" value=""></td>
-                    <td></td>
-                </tr>
+                @foreach(session('cart') as $id => $el)
+                    <tr>
+                        <td><a href="{{ route('deleteItem', $el['id']) }}"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="26.000000pt" height="26.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g fill="red" transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none"><path d="M2260 4884 c-889 -121 -1627 -724 -1915 -1564 -197 -576 -162 -1212 98 -1762 127 -268 334 -547 545 -733 453 -400 985 -605 1572 -605 751 0 1449 354 1892 960 450 616 571 1416 323 2140 -202 588 -630 1072 -1190 1345 -228 111 -479 186 -738 220 -147 19 -443 18 -587 -1z m-485 -1265 c34 -9 99 -69 413 -382 l372 -371 373 371 c313 313 378 373 412 382 64 17 108 13 166 -16 92 -47 137 -150 109 -253 -11 -40 -50 -83 -383 -417 l-371 -373 371 -373 c333 -334 372 -377 383 -417 44 -167 -103 -314 -270 -270 -40 11 -83 50 -417 383 l-373 371 -372 -371 c-335 -333 -378 -372 -418 -383 -167 -44 -314 103 -270 270 11 40 50 83 383 418 l371 372 -371 373 c-333 334 -372 377 -383 417 -27 102 16 204 109 252 57 30 102 35 166 17z"/></g></svg></a></td>
+                        <td class="td-item">
+                            <img src="{{ asset('cover_images/' . $el['photo']) }}" alt="{{ $el['name'] }}">
+                            <span>{{ $el['name'] }}</span>
+                        </td>
+                        <td>{{ $el['price'] }} lei</td>
+                        <td><input type="number" value="{{ $el['quantity'] }}"></td>
+                        <td>{{ $el["total"] }} lei</td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
 
@@ -81,27 +84,22 @@
             <h2>Total coș</h2>
 
             <div class="additional-info--top">
-                <p>Sub-total</p>
-                <span></span>
-            </div>
-
-            <div class="additional-info--middle">
-                <p>Livrare</p>
-
-                <div class="additional-info--middle---block">
-                    <input type="radio" name="delivery-method"><span>Ridică din restaurant</span><br>
-                    <input type="radio" name="delivery-method"><span>Livrare la domiciliu EXCLUSIV în oraș: 15,00 le</span><br>
-                    <input type="radio" name="delivery-method"><span>Livrare la domiciliu în ZONA METROPOLITANĂ Iași: 21,00 lei</span><br>
+                <div>
+                    <p>Suma totală</p>
+                    <p>Сantitate totală</p>
                 </div>
-            </div>
 
-            <div class="additional-info--bottom">
-                <p>Total </p>
-                <span></span>
+                <div>
+                <span>{{ $subtotal }} lei</span><br>
+                <span>{{ $totalItems }} luc.</span>
+                </div>
             </div>
 
             <button><a href="{{ route('checkout') }}">Finalizeză comanda</a></button>
         </div>
+        @else 
+            <p class="cart-nothing">Nu este nimic în cărucior</p>
+        @endif
     </div>
 
     <!-- Wrapper (конец) -->

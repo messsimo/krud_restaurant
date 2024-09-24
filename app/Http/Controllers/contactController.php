@@ -11,7 +11,25 @@ use App\Http\Requests\contactRequest;
 class contactController extends Controller {
     // Функция отображения страницы
     public function showContact() {
-        return view("contact");
+        // Корзина
+        $cart = session('cart', []);
+
+        // Пересчет общей цены
+        $subtotal = 0;
+        foreach ($cart as $el) {
+            $price = (float) $el['price'];
+            $quantity = (int) $el['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
+        // Подсчет общего кол-во блюд
+        $totalItems = 0;
+        foreach ($cart as $el) {
+            $quantity = (int) $el['quantity'];
+            $totalItems += $quantity;
+        }
+
+        return view('contact', compact('cart', 'subtotal', 'totalItems'));
     }
 
     // Функция обработки формы

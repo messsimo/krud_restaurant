@@ -97,45 +97,25 @@
     font-weight: 300;
     font-size: 22px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.user-cart .additional-info .additional-info--top,
-.user-cart .additional-info .additional-info--middle,
-.user-cart .additional-info .additional-info--bottom {
+.user-cart .additional-info .additional-info--top {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 25px;
 }
 
-.user-cart .additional-info .additional-info--middle {
-    padding: 15px 0;
-}
-
-.user-cart .additional-info .additional-info--bottom {
-    padding: 15px 0;
-}
-
-.user-cart .additional-info .additional-info--top p,
-.user-cart .additional-info .additional-info--middle p,
-.user-cart .additional-info .additional-info--bottom p {
+.user-cart .additional-info .additional-info--top p {
     text-transform: uppercase;
     font-size: 14px;
+    padding-bottom: 5px;
 }
 
-.user-cart .additional-info .additional-info--top span,
-.user-cart .additional-info .additional-info--middle span,
-.user-cart .additional-info .additional-info--bottom span{
+.user-cart .additional-info .additional-info--top span {
     font-size: 14px;
-}
-
-.user-cart .additional-info .additional-info--middle span {
-    padding-left: 10px;
-}
-
-.user-cart .additional-info .additional-info--middle .additional-info--middle---block input[type="radio"] {
-    accent-color: black; 
+    padding-bottom: 5px;
 }
 
 .user-cart .additional-info .btn {
@@ -159,6 +139,13 @@
 
 .user-cart .additional-info button:hover {
     background-color: rgb(30, 30, 30);
+}
+
+.user-cart .cart-nothing {
+    padding-bottom: 400px;
+    padding-top: 25px;
+    font-size: 22px;
+    font-weight: 300;
 }
 
 

@@ -28,12 +28,12 @@
 
                 <div class="cart-block">
                     <span>Item(s)</span>
-                    <p>0</p>
+                    <p>{{ $totalItems }}</p>
                 </div>
 
                 <div class="cart-block">
                     <span>Total</span>
-                    <p class="cart-total">0,00 lei</p>
+                    <p class="cart-total">{{ $subtotal }} lei</p>
                 </div>
             </a>
         </div>
