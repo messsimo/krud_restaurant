@@ -28,12 +28,12 @@
 
                 <div class="cart-block">
                     <span>Item(s)</span>
-                    <p>0</p>
+                    <p>{{ $totalItems }}</p>
                 </div>
 
                 <div class="cart-block">
                     <span>Total</span>
-                    <p class="cart-total">0,00 lei</p>
+                    <p class="cart-total">{{ $subtotal }} lei</p>
                 </div>
             </a>
         </div>
@@ -49,6 +49,7 @@
     </div>
 
     <!-- Таблица -->
+    @if (session('cart') != null && count(session('cart')) > 0)
     <div class="user-cart">
         <h1>Checkout</h1>
 
@@ -61,14 +62,16 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach(session('cart') as $id => $el)
                 <tr>
-                    <td class="td-item">
-                        <img src="{{ asset('cover_images/') }}" alt="">
-                        <span></span>
+                    <td class="td-item td-item--checkout">
+                            <img src="{{ asset('cover_images/' . $el['photo']) }}" alt="{{ $el['name'] }}">
+                            <span>{{ $el['name'] }}</span>
                     </td>
-                    <td></td>
-                    <td></td>
+                    <td>{{ $el['quantity'] }} pozitii</td>
+                    <td>{{ $el['total'] }} lei</td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
 
@@ -76,30 +79,33 @@
             <h2>Checkout form</h2>
         </div>
 
+        <!-- <p>{{ implode(', ', $order) }}</p>
+        <p>{{ $subtotal }}</p> -->
+
+
         <!-- Форма -->
-        <form action="" method="POST">
+        <form action="{{ route('checkoutForm') }}" method="POST">
             @csrf
 
             <!-- Input с информацией о доставке -->
-            <input type="hidden" name="products" value="">
-            <input type="hidden" name="quanity" value="">
-            <input type="hidden" name="total" value="">
+            <input type="hidden" name="order" value="{{ implode(', ', $order) }}">
+            <input type="hidden" name="total" value="{{ $subtotal }}">
 
             <label for="name">Nume</label><br>
             <input type="text" name="name"><br>
             <label for="telefon">Telefon</label><br>
             <input type="text" name="telefon"><br>
             <label for="email">Email</label><br>
-            <input type="text" name="email"><br>
+            <input type="email" name="email"><br>
 
             <label for="delivery-method">Metoda de livrare</label><br>
-            <input type="radio" name="delivery-method" id="delivery-method"><span>Ridică din restaurant</span><br>
-            <input type="radio" name="delivery-method" id="delivery-method"><span>Livrare la domiciliu EXCLUSIV în oraș: 15,00 le</span><br>
-            <input type="radio" name="delivery-method" id="delivery-method" class="last-input"><span>Livrare la domiciliu în ZONA METROPOLITANĂ Iași: 21,00 lei</span><br>
+            <input type="radio" name="delivery-method" id="delivery-method" value="Ridică din restaurant"><span>Ridică din restaurant</span><br>
+            <input type="radio" name="delivery-method" id="delivery-method" value="Livrare la domiciliu EXCLUSIV în oraș: 15,00 lei"><span>Livrare la domiciliu EXCLUSIV în oraș: 15,00 lei</span><br>
+            <input type="radio" name="delivery-method" id="delivery-method" class="last-input" value="Livrare la domiciliu în ZONA METROPOLITANĂ Iași: 21,00 lei"><span>Livrare la domiciliu în ZONA METROPOLITANĂ Iași: 21,00 lei</span><br>
 
             <label for="payment">Мetode de plată</label><br>
-            <input type="radio" name="payment"><span>Numerar la primire</span><br>
-            <input type="radio" name="payment" class="last-input"><span>Cu card la primire</span><br>
+            <input type="radio" name="payment" value="Numerar la primire"><span>Numerar la primire</span><br>
+            <input type="radio" name="payment" class="last-input" name="Cu card la primire"><span>Cu card la primire</span><br>
 
             <label for="message">Dorințele dvs</label><br>
             <textarea name="message" id="message"></textarea><br>
@@ -123,6 +129,9 @@
 
             <button type="submit">Plasați o comandă</button>
         </form>
+        @else 
+            <p class="cart-nothing">Nu este nimic în cărucior</p>
+        @endif
     </div>
 
     <!-- Wrapper (конец) -->

@@ -5,6 +5,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session; // Подключение сессий
 // Подключение моделей
 use App\Models\dishes;
+use App\Models\orders;
+// Подключение модуля
+use App\Http\Requests\checkoutRequest;
 
 class cartController extends Controller {
     // Функция отображения корзины
@@ -89,11 +92,6 @@ class cartController extends Controller {
         return redirect()->route('cart');
     }    
 
-    // Функция отображения Checkout страницы
-    public function showCheckout() {
-        return view("checkout");
-    }
-
     // Функция обновления кол-во блюда
     public function updateQuantity(Request $request, $id) {
         // Получение корзины
@@ -108,6 +106,69 @@ class cartController extends Controller {
 
         // Редирект
         return redirect()->route('cart');
-}
+    }
 
+
+
+    // Функция отображения Checkout страницы
+    public function showCheckout() {
+        $cart = session('cart', []);
+    
+        // Пересчет общей цены
+        $subtotal = 0;
+        foreach ($cart as $el) {
+            $price = (float) $el['price'];
+            $quantity = (int) $el['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
+        // Подсчет общего количества товаров
+        $totalItems = 0;
+        foreach ($cart as $el) {
+            $quantity = (int) $el['quantity'];
+            $totalItems += $quantity;
+        }
+    
+        // Инициализация массива для заказа
+        $order = [];
+    
+        // Перебор массива товаров пользователя
+        foreach ($cart as $el) {
+            $price = (float) $el['price'];
+            $quantity = (int) $el['quantity'];
+    
+            // Добавление информации о товарах в массив заказа
+            $order[] = $el['name'] . ' (Количество: ' . $quantity . ')';
+        }
+    
+        // Возвращаем данные на страницу checkout
+        return view('checkout', compact('cart', 'subtotal', 'totalItems', 'order'));
+    }
+    
+    // Функция обработки формы чекаута
+    public function checkoutForm(checkoutRequest $req) {
+        // Подключение к таблице
+        $orders = new orders();
+
+        // Занесение данных в таблицу
+        $orders->name = $req->input("name");
+        $orders->telefon = $req->input("telefon");
+        $orders->email = $req->input("email");
+        $orders->dishes = $req->input("order");
+        $orders->total = $req->input("total");
+        $orders->delivery_method = $req->input("delivery-method");
+        $orders->payment = $req->input("payment");
+        $orders->message = $req->input("message");
+
+        // Сохранение данных
+        $orders->save();
+
+        // Установка значения в сессию (успешной)
+        Session::put("key", "success");
+        // Установка сообщения (успешного)
+        Session::flash("success", "Vă mulțumim pentru comandă! Vă vom contacta în scurt timp pentru a confirma");
+
+        // Переадресация обратно
+        return redirect()->back();
+    }
 }

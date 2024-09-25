@@ -42,3 +42,5 @@ Route::get("/cart/add/{id}", [cartController::class, "addItem"])->name("addItem"
 Route::get("/cart/delete/{id}", [cartController::class, "deleteItem"])->name("deleteItem");
 // Изменения кол-во блюда
 Route::post('/cart/update/{id}', [cartController::class, 'updateQuantity'])->name('updateQuantity');
+// Обработка формы заказа
+Route::post("/checkout", [cartController::class, "checkoutForm"])->name("checkoutForm");

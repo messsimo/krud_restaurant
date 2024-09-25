@@ -69,6 +69,10 @@
     margin-top: 13px;
 }
 
+.user-cart table tbody tr .td-item--checkout {
+    margin-top: 0px;
+}
+
 .user-cart table tbody tr .td-item img {
     width: 75px;
     height: 75px;
@@ -179,7 +183,8 @@
     font-weight: 300;
 }
 
-.user-cart form input[type="text"] {
+.user-cart form input[type="text"],
+.user-cart form input[type="email"] {
     width: 95%;
     /* padding-left: 10px; */
     outline: none;
