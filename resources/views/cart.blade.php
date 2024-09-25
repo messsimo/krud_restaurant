@@ -72,7 +72,12 @@
                             <span>{{ $el['name'] }}</span>
                         </td>
                         <td>{{ $el['price'] }} lei</td>
-                        <td><input type="number" value="{{ $el['quantity'] }}"></td>
+                        <td>
+                            <form action="{{ route('updateQuantity', $el['id']) }}" method="POST">
+                            @csrf
+                                <input type="number" name="quantity" value="{{ $el['quantity'] }}" min="1" onchange="this.form.submit()">
+                            </form>
+                        </td>
                         <td>{{ $el["total"] }} lei</td>
                     </tr>
                 @endforeach

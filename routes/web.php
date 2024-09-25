@@ -40,3 +40,5 @@ Route::get("/checkout", [cartController::class, "showCheckout"])->name("checkout
 Route::get("/cart/add/{id}", [cartController::class, "addItem"])->name("addItem");
 // Удаление блюда из корзины
 Route::get("/cart/delete/{id}", [cartController::class, "deleteItem"])->name("deleteItem");
+// Изменения кол-во блюда
+Route::post('/cart/update/{id}', [cartController::class, 'updateQuantity'])->name('updateQuantity');

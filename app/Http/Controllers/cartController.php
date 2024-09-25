@@ -93,4 +93,21 @@ class cartController extends Controller {
     public function showCheckout() {
         return view("checkout");
     }
+
+    // Функция обновления кол-во блюда
+    public function updateQuantity(Request $request, $id) {
+        // Получение корзины
+        $cart = session()->get('cart');
+
+        // Условие иземенения кол-во блюда
+        if(isset($cart[$id])) {
+            $cart[$id]['quantity'] = $request->quantity;
+            $cart[$id]['total'] = $cart[$id]['price'] * $request->quantity;
+            session()->put('cart', $cart);
+        }
+
+        // Редирект
+        return redirect()->route('cart');
+}
+
 }

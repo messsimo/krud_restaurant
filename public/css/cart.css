@@ -51,6 +51,7 @@
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
     padding: 10px 20px;
+    font-size: 14px;
 }
 
 .user-cart table tbody tr td svg {
@@ -64,6 +65,8 @@
 
 .user-cart table tbody tr .td-item {
     display: flex;
+    border: none;
+    margin-top: 13px;
 }
 
 .user-cart table tbody tr .td-item img {
@@ -76,14 +79,16 @@
     font-size: 14px;
 }
 
-.user-cart table tbody tr td {
-    font-size: 14px;
+.user-cart table tbody tr td form {
+    width: 100px;
+    height: 1px;
 }
 
-.user-cart table tbody tr td input {
+.user-cart table tbody tr td form input {
     border: 1px solid #ddd;
     padding: 5px 15px;
     outline: none;
+    margin-top: 14px;
 }
 
 .user-cart .additional-info {
