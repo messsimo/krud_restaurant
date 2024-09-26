@@ -38,6 +38,7 @@
 
     <!-- Подключение JavaScript -->
     <script src="{{ asset('js/slider-review.js') }}"></script>
+    <script src="{{ asset('js/burger.js') }}"></script>
 
     <!-- Подключение JS файл Leaflet -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>

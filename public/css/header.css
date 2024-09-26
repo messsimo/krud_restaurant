@@ -147,3 +147,68 @@ header .cart .cart-block p {
 header .cart .cart-block .cart-total {
     color:#cc9933;
 }
+
+/* Стили для бургер меню */
+.burger {
+    /* display: none; */
+    margin-top: 57px;
+}
+
+.burger svg {
+    width: 32px;
+    height: 32px;
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+}
+
+.burger svg:hover {
+    transform: scale(1.1);
+}
+
+.burger-dropdown {
+    display: none;
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+}
+
+.burger-dropdown.active {
+    display: block;
+}
+
+.burger-dropdown nav {
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+    margin-right: -10px;
+}
+
+.burger-dropdown nav a {
+    color: white;
+    text-decoration: none; 
+    font-size: 32px;
+    margin-bottom: 15px;
+    transition: 0.1s ease-in-out;
+}
+
+.burger-dropdown nav a:hover {
+    color: #cc9933;
+}
+
+.burger-dropdown svg {
+    float: right;
+    margin-top: 40px;
+    margin-right: 55px;
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    transition: 0.4s ease-in-out;
+}
+
+.burger-dropdown svg:hover {
+    transform: scale(1.3);
+}

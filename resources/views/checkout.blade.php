@@ -49,9 +49,9 @@
     </div>
 
     <!-- Таблица -->
-    @if (session('cart') != null && count(session('cart')) > 0)
     <div class="user-cart">
         <h1>Checkout</h1>
+        @if (session('cart') != null && count(session('cart')) > 0)
 
         <table>
             <thead>
@@ -78,10 +78,6 @@
         <div class="h2-form">
             <h2>Checkout form</h2>
         </div>
-
-        <!-- <p>{{ implode(', ', $order) }}</p>
-        <p>{{ $subtotal }}</p> -->
-
 
         <!-- Форма -->
         <form action="{{ route('checkoutForm') }}" method="POST">
@@ -130,7 +126,7 @@
             <button type="submit">Plasați o comandă</button>
         </form>
         @else 
-            <p class="cart-nothing">Nu este nimic în cărucior</p>
+            <p class="cart-nothing">Dvs nu are produse</p>
         @endif
     </div>
 
