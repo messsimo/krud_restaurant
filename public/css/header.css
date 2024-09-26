@@ -29,6 +29,10 @@ header nav a {
     position: relative; 
 }
 
+header nav a:last-child {
+    margin-right: 0;
+}
+
 header nav a:hover {
     color: #cc9933;
 }
@@ -150,7 +154,7 @@ header .cart .cart-block .cart-total {
 
 /* Стили для бургер меню */
 .burger {
-    /* display: none; */
+    display: none;
     margin-top: 57px;
 }
 
@@ -190,7 +194,7 @@ header .cart .cart-block .cart-total {
 .burger-dropdown nav a {
     color: white;
     text-decoration: none; 
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 15px;
     transition: 0.1s ease-in-out;
 }

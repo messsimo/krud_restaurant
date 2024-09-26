@@ -1,0 +1,38 @@
+/* Адаптация для шапки сайта */
+@media (max-width: 1200px) {
+    header nav a {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 980px) {
+    header nav {
+        line-height: 150px;
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        margin-top: 57px;
+        padding-left: 50px;
+    }
+
+    header img {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    header img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .burger {
+        padding-left: 15px;
+    }
+
+    header .cart {
+        margin-right: 15px;
+    }
+}
