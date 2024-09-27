@@ -37,6 +37,45 @@
     }
 }
 
+/* Адаптация для футера */
+@media (max-width: 1440px) {
+    footer {
+        padding: 50px 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    footer {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    footer {
+        display: grid;
+        place-items: center;
+        justify-content: normal;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer nav a {
+        margin-right: 15px;
+    }
+
+    footer nav a:last-child {
+        margin-right: 0;
+    }
+    
+    footer .socials {
+        padding: 25px 0;
+    }
+}
+
+
 /* Адаптация для блока Hero - main */
 @media (max-width: 980px) {
     video {
