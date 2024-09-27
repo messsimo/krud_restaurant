@@ -259,3 +259,14 @@
         padding: 0px 50px 50px 50px;
     }
 }
+
+/* Адапатация для старницы блюд категории - delivery */
+@media (max-width: 620px) {
+    .dishes {
+        padding: 25px 50px 50px 50px;
+    }
+
+    .navigation {
+        margin: 15px 50px;
+    }
+}
