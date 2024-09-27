@@ -309,3 +309,23 @@
         height: 350px;
     }
 }
+
+
+
+
+/* Адпатация для страницы меню - menu */
+@media (max-width: 620px) {
+    .menu {
+        padding: 50px 50px;
+    }
+
+    .hero-menu h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu {
+        padding: 50px 15px;
+    }
+}

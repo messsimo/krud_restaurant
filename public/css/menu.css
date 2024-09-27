@@ -36,6 +36,7 @@
 
 .menu .container .sub-container {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
@@ -43,6 +44,10 @@
     width: 350px;
     margin-bottom: 25px;
 }
+
+/* .menu .container .sub-container .block:last-child {
+    margin-right: 0;
+} */
 
 .menu .container .sub-container .block table {
     width: 100%;
