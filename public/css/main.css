@@ -46,6 +46,7 @@ video {
 .temp-1 img,
 .temp-2 img {
     width: 50%;
+    object-fit: cover;
 }
 
 .temp-1 .temp-1--text,
