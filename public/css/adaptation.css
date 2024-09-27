@@ -270,3 +270,42 @@
         margin: 15px 50px;
     }
 }
+
+/* Адаптация для страницы блюда - delivery */
+@media (max-width: 1200px) {
+    .dishInfo img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 980px) {
+    .dishInfo {
+        display: grid;
+        place-items: center;
+        flex-direction: column;
+    }
+
+    .dishInfo img {
+        width: 450px;
+        height: 450px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .dishInfo .dishInfo-container {
+        width: 100%;
+        order: -1;
+    }
+}
+
+@media (max-width: 620px) {
+    .dishInfo {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 470px) {
+    .dishInfo img {
+        height: 350px;
+    }
+}
