@@ -36,3 +36,73 @@
         margin-right: 15px;
     }
 }
+
+/* Адаптация для блока Hero - main */
+@media (max-width: 980px) {
+    video {
+        height: 100vh;
+    }
+}
+
+/* Адаптация для промежуточных блоков - main */
+@media (max-width: 980px) {
+    .temp-1, .temp-2 {
+        display: grid;
+        place-items: center;
+        flex-direction: column;
+    }
+
+    .temp-1 img, .temp-2 img {
+        width: 100%;
+    }
+
+    .temp-1 img {
+        order: -1;
+    }
+
+    .temp-1 .temp-1--text, .temp-2 .temp-2--text {
+        padding: 100px 0;
+    }
+
+    .temp-1 .temp-1--text h2, .temp-2 .temp-2--text h2 {
+        padding-left: 50px;
+    }
+
+    .temp-2 .temp-2--text p {
+        color: #ffff;
+        font-size: 36px;
+        text-transform: uppercase;
+        padding-left: 50px;
+    }
+
+    .temp-2 .temp-2--text .sub-text {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .temp-2 .temp-2--text a {
+        margin-left: 50px;
+    }
+
+    .temp-1 .temp-1--text, .temp-2 .temp-2--text {
+        width: 100%;
+    }
+
+    .temp-1 .temp-1--text p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .temp-1 .temp-1--text span {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .temp-3 .temp-3--text span {
+        width: 100%;
+    }
+
+    .temp-3 .temp-3--text {
+        margin: 0 50px;
+    }
+}

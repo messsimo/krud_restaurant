@@ -33,6 +33,7 @@ img, svg {
 /* Стили для блока Hero */
 video {
     width: 100%;
+    object-fit: cover;
 }
 
 /* Cтили для промежуточного блока #1 */
@@ -53,6 +54,7 @@ video {
     padding-left: 75px;
     padding-right: 75px;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .temp-1 .temp-1--text h2,

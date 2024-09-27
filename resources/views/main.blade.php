@@ -57,7 +57,6 @@
 
     <!-- Блок Hero -->
     <video autoplay loop>
-        <!-- <source src="{{ asset('video/hero.mov') }}" type="video/quicktime"> -->
         <source src="{{ asset('video/hero.mp4') }}" type="video/mp4">
         Ваш браузер не поддерживает видео-тег.
     </video>
