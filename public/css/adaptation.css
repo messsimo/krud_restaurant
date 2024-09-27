@@ -195,3 +195,51 @@
         width: 100%;
     }
 }
+
+
+
+
+/* Адаптация для старницы бронирования */
+/* Адаптация блока Hero - booking */
+@media (max-width: 460px) {
+    .hero-booking h1 {
+        font-size: 90px;
+    }
+}
+
+/* Адаптация для формы - booking */
+@media (max-width: 760px) {
+    .booking-form {
+        padding: 50px;
+    }
+
+    .booking-form form {
+        width: 100%;
+    }
+
+    .booking-form form .inputs-top {
+        display: grid;
+        place-items: center;
+        justify-content: normal;
+    }
+
+    .booking-form form .inputs-top input {
+        margin-bottom: 15px;
+        width: 300px;
+        padding: 5px 10px;
+    }
+
+    .booking-form form .inputs-top select {
+        width: 325px;
+    }
+}
+
+@media (max-width: 420px) {
+    .booking-form form .inputs-top input {
+        width: 250px;
+    }
+
+    .booking-form form .inputs-top select {
+        width: 275px;
+    }
+}
