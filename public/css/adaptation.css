@@ -57,7 +57,9 @@
         height: 100vh;
     }
 
-    .temp-1 img {
+    .temp-1 img, .temp-2 img {
+        width: 100%;
+        height: 100vh;
         order: -1;
     }
 
@@ -134,5 +136,23 @@
     .reviews .reviews-container .block .top-block svg {
         width: 100px;
         height: 100px;
+    }
+}
+
+/* Адаптация для блока бронирования - main */
+@media (max-width: 980px) {
+    .booking .map {
+        width: 100%;
+        height: 450px;
+    }
+
+    .booking {
+        display: grid;
+        place-items: center;
+        flex-direction: column;
+    }
+
+    .booking .booking-text {
+        width: 100%;
     }
 }
