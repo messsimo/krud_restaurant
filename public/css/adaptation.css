@@ -243,3 +243,19 @@
         width: 275px;
     }
 }
+
+
+
+
+
+/* Адаптация для страниц доставки */
+/* Адапатация для старницы категорий - delivery */
+@media (max-width: 620px) {
+    .delivery-taxes {
+        padding: 25px 50px;
+    }
+
+    .categories {
+        padding: 0px 50px 50px 50px;
+    }
+}
