@@ -69,6 +69,7 @@
         <h1>Checkout</h1>
         @if (session('cart') != null && count(session('cart')) > 0)
 
+        <div class="table">
         <table>
             <thead>
                 <tr>
@@ -90,6 +91,7 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
 
         <div class="h2-form">
             <h2>Checkout form</h2>

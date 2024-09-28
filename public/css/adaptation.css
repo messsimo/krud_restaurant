@@ -398,3 +398,24 @@
         margin: 15px 50px;
     }
 }
+
+/* Адаптация для корщины */
+@media (max-width: 980px) {
+    .user-cart form {
+        width: 94%;
+    }
+
+    .user-cart form input[type="text"], .user-cart form input[type="email"] {
+        width: 95%;
+        padding: 7px 0 7px 10px;
+    }
+
+    .user-cart form textarea {
+        width: 95%;
+        padding: 7px 0px 7px 10px;
+    }
+
+    .user-cart form button {
+        width: 97%;
+    }
+}
