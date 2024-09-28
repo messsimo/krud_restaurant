@@ -21,6 +21,12 @@
     padding-bottom: 15px;
 }
 
+.user-cart .table {
+    display: flex;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
 .user-cart table {
     width: 100%;
     background-color: #ffff;

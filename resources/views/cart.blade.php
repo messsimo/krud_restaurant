@@ -70,6 +70,7 @@
 
         <!-- Таблица -->
         @if (session('cart') != null && count(session('cart')) > 0)
+        <div class="table">
         <table>
             <thead>
                 <tr>
@@ -100,6 +101,7 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
 
         <!-- Оформление -->
         <div class="additional-info">

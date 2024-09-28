@@ -360,3 +360,41 @@
         margin-bottom: 10px;
     }
 }
+
+
+
+
+/* Адаптация для корзины - cart */
+@media (max-width: 1240px) {
+    .user-cart table tbody tr td form {
+        width: 100%;
+        margin-left: -25px;
+    }
+
+    .user-cart table tbody tr td {
+        padding: 10px 15px;
+    }
+
+    .user-cart table tbody tr .td-item {
+        width: 250px;
+    }
+}   
+
+
+@media (max-width: 899px) {
+    .user-cart .table {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+      }
+}
+
+@media (max-width: 680px) {
+    .user-cart {
+        padding: 25px 50px;
+    }
+
+    .navigation {
+        margin: 15px 50px;
+    }
+}
