@@ -58,4 +58,25 @@ Krud Restaurant is an interactive CRUD application for a restaurant in Iasi, Rom
 ## Screenshots
 <p align="center">
     <img src="public/readme_photo/readme1.png" alt="Скриншот 1" width="200"/>
+    <img src="public/readme_photo/readme2.png" alt="Скриншот 2" width="200"/>
+    <img src="public/readme_photo/readme3.png" alt="Скриншот 3" width="200"/>
+    <img src="public/readme_photo/readme4.png" alt="Скриншот 4" width="200"/>
+    <img src="public/readme_photo/readme5.png" alt="Скриншот 5" width="200"/>
+    <img src="public/readme_photo/readme6.png" alt="Скриншот 6" width="200"/>
+    <img src="public/readme_photo/readme7.png" alt="Скриншот 7" width="200"/>
+    <img src="public/readme_photo/readme8.png" alt="Скриншот 8" width="200"/>        
+    <img src="public/readme_photo/readme9.png" alt="Скриншот 9" width="200"/>
+    <img src="public/readme_photo/readme10.png" alt="Скриншот 10" width="200"/>
+    <img src="public/readme_photo/readme11.png" alt="Скриншот 11" width="200"/>
+    <img src="public/readme_photo/readme12.png" alt="Скриншот 12" width="200"/>
+    <img src="public/readme_photo/readme13.png" alt="Скриншот 13" width="200"/>
+    <img src="public/readme_photo/readme14.png" alt="Скриншот 14" width="200"/>
+    <img src="public/readme_photo/readme15.png" alt="Скриншот 15" width="200"/>
+    <img src="public/readme_photo/readme16.png" alt="Скриншот 16" width="200"/>
+    <img src="public/readme_photo/readme17.png" alt="Скриншот 17" width="200"/>
+    <img src="public/readme_photo/readme18.png" alt="Скриншот 18" width="200"/>        
+    <img src="public/readme_photo/readme19.png" alt="Скриншот 19" width="200"/>
+    <img src="public/readme_photo/readme20.png" alt="Скриншот 20" width="200"/>
+    <img src="public/readme_photo/readme21.png" alt="Скриншот 21" width="200"/>
+    <img src="public/readme_photo/readme22.png" alt="Скриншот 22" width="200"/>
 </p>
