@@ -329,3 +329,34 @@
         padding: 50px 15px;
     }
 }
+
+
+
+
+/* Адаптация для страницы контактов - contact */
+@media (max-width: 980px) {
+    .contact-form {
+        padding: 100px 50px;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-form form .top-form {
+        display: grid;
+        justify-content: normal;
+        place-items: center;
+    }
+
+    .contact-form form .top-form .block {
+        width: 100%;
+    }
+
+    .contact-form form .top-form input {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+}
