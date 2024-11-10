@@ -19,7 +19,7 @@ Krud Restaurant is an interactive CRUD application for a restaurant in Iasi, Rom
 
 1. Clone the repository:
     ```
-      git clone https://github.com/username/repository.git
+      git clone https://github.com/messsimo/krud_restaurant.git
     ```
 2. Go to the project directory:
     ```
